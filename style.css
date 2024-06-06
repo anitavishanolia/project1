@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+font-family: 'Poppins', sans-serif;
+
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+background-color: rgb(171, 187, 182);
+background-position: center;
+    background-image: url(images/facilities_images.jpg);
+    background-size: cover; 
+   position: relative;
+   
+ 
+}
+nav{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 200px;
+}
+.nav-part ul li{
+    list-style: none;
+    display: inline-block ;
+    padding: 10px 12px;
+    position: relative;
+
+}
+.nav-part ul li a{
+    color: rgb(52, 50, 50);
+    font-size: 16px;
+    font-family: poppins;
+    
+}
+.nav-part ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-part ul li:hover::after{
+    width: 100%;
+}
+.box{
+    width: 80%;
+    color:green;
+    position: absolute;
+    left: 50%;
+ 
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box h1{
+    font-size: 30px;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color:blueviolet;
+    border: 1.5px solid black;
+    padding: 0 10px;
+    background:transparent;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 2px solid black;
+    background: rgb(222, 18, 18);
+    transition: 0s;
+}
+@media(max-width: 600px){
+    .box h1{
+        font-size: 40px;
+    }
+    .nav-part ul li{
+      display:block ;
+    }
+    .nav-part{
+        position: absolute;
+        background: greenyellow;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index:1;
+    }
+ 
+
+} 
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+ h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+ p{
+    color:rgb(28, 26, 26);
+    font-size: 300;
+    line-height: 20px;
+    padding:  10px;
+    margin: auto;
+}
+.row{
+ 
+    margin: 3%; 
+    justify-content: space-between;
+}
+
+.course-col{
+  
+    flex-basis: 30%;
+    background: rgb(157, 196, 183);
+    border-radius: 7px;
+    margin-bottom: 5%;
+    padding: 20px 13px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0.2,0.9);
+
+}
+@media(max-width: 700px){
+    .row{
+    
+        flex-direction: column;
+    }
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50%;
+
+}
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.classroom{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+transition: 0.5s;
+}
+.classroom:hover{
+    background: rgba(226,0,0,0.7);
+}
+.classroom h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 23px;
+    bottom: 0;
+    left: 50%;
+transition: translatex(-50%);
+position: absolute;
+
+}
+.classroom:hover h3{
+    bottom: 50%;
+
+}
+.aboutmhs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 4%;
+}
+.aboutmhs h2{
+justify-content: space-between;
+}
+.aboutmhs-col{
+    flex-basis: 30%;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutmhs-col img{
+    width: 100%;
+    display: block;
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+ 
+     flex-basis: 30%; 
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.facilities-col img{
+    width: 100%; 
+    height: 100%;
+    
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.result{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.result-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    text-align: left;
+
+}
+.result-col h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 40%;
+    text-align: left;
+}
+.result-col img{
+    width: 100%; 
+    height: 100%;
+}
+.teachers{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.teachers-col{
+    flex-basis: 30%;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.teachers-col img{
+    width: 60%; 
+  display: block;
+  border-radius: 6px;
+  position: relative;
+  left: 30%;
+  top: 5%;
+  bottom: 5%;
+} 
+
